@@ -1,1 +1,30 @@
 // Mixins Here
+
+// .para-btn(@porcelain, @btn-bg-color):
+
+.para-btn(@btn-font, @btn-back) {
+    padding: 9px 10px;
+    text-align: center;
+    color: @btn-font;
+    background: @btn-back;
+    border-radius: 5px;
+    border: 2px solid lighten(@btn-back, 10%);
+    transition: background 1s;
+    &:hover {
+        background: lighten(@btn-back, 10%);
+    }
+
+}
+
+.flex-custom(@direction, @wrap, @justify, @align) {
+    display: flex;
+    flex-flow: @direction @wrap;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.border-bottom-radius(@radius) {
+    border-bottom-right-radius: @radius;
+    border-bottom-left-radius: @radius;
+}
+

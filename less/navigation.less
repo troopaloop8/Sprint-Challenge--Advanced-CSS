@@ -1,1 +1,24 @@
 // Navigation code here
+.top-bar {
+    .flex-custom(column, nowrap, center, center); 
+    background: darken(@porcelain, 2%);
+
+    .top-title {
+        h1 {
+            font-size: 4rem;
+            margin: 18px auto 10px;
+        }
+    }
+    .top-nav {
+        nav {
+            .flex-custom(row, wrap, space-between, center);
+            a {
+                font-size: 2rem;
+                padding: 13px;
+                text-decoration: none;
+                color: @ebony-clay;
+                
+            }
+        }
+    }
+}
