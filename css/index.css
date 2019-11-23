@@ -1,3 +1,32 @@
+.flashy-flash {
+  -webkit-animation: fade-in 2s linear infinite alternate;
+  -moz-animation: fade-in 2s linear infinite alternate;
+  animation: fade-in 2s linear infinite alternate;
+}
+@-moz-keyframes fade-in {
+  100% {
+    opacity: 1;
+  }
+  0% {
+    opacity: 0.1;
+  }
+}
+@-webkit-keyframes fade-in {
+  100% {
+    opacity: 1;
+  }
+  0% {
+    opacity: 0.1;
+  }
+}
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+  }
+  0% {
+    opacity: 0.1;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -198,6 +227,35 @@ p {
     font-size: 1.7rem;
   }
 }
+.top-bar .top-nav nav a:hover {
+  -webkit-animation: fade-in 2s linear infinite alternate;
+  -moz-animation: fade-in 2s linear infinite alternate;
+  animation: fade-in 2s linear infinite alternate;
+}
+@-moz-keyframes fade-in {
+  100% {
+    opacity: 1;
+  }
+  0% {
+    opacity: 0.1;
+  }
+}
+@-webkit-keyframes fade-in {
+  100% {
+    opacity: 1;
+  }
+  0% {
+    opacity: 0.1;
+  }
+}
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+  }
+  0% {
+    opacity: 0.1;
+  }
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -328,9 +386,36 @@ footer {
   transition: background 1s;
   width: 33%;
   font-size: 2rem;
+  -webkit-animation: fade-in 2s linear infinite alternate;
+  -moz-animation: fade-in 2s linear infinite alternate;
+  animation: fade-in 2s linear infinite alternate;
 }
 .home .walk .walk-text .btn:hover {
   background: #353e5a;
+}
+@-moz-keyframes fade-in {
+  100% {
+    opacity: 1;
+  }
+  0% {
+    opacity: 0.1;
+  }
+}
+@-webkit-keyframes fade-in {
+  100% {
+    opacity: 1;
+  }
+  0% {
+    opacity: 0.1;
+  }
+}
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+  }
+  0% {
+    opacity: 0.1;
+  }
 }
 @media (max-width: 560px) {
   .home .walk .walk-text .btn {
