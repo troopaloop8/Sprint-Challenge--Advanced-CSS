@@ -10,6 +10,7 @@
         }
     }
     .top-nav {
+      
         nav {
             .flex-custom(row, wrap, space-between, center);
             a {
@@ -17,6 +18,10 @@
                 padding: 13px;
                 text-decoration: none;
                 color: @ebony-clay;
+                @media @phone {
+                    font-size: 1.7rem;
+                }
+                
                 
             }
         }

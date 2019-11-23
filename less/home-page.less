@@ -3,56 +3,110 @@
 .home {
 
   .intro {
+    @media @phone {
+        
+    }
+    
     img {
       .border-bottom-radius(10px); 
+      @media @tablet {
+        width: 100vw;
+      }
+      @media @phone {
+        padding: 0 auto;
+       
+      }
+      
     }
     h2 {
       padding: 15px;
+      @media @phone {
+        padding: 15px 30px;
+      }
     }
 
     p {
       padding:0 15px;
+      @media @phone {
+        padding: 0 30px;
+      }
     }
-  
+    
+    
   }
 
   .space-images {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    @media @phone {
+      justify-content: center;
+    }
 
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      @media @phone {
+        width: 85%;
+        
+      }
     }
+    .sky, .launch {
+      @media @phone {
+        display: none;
+      }
+    }
+
   }
 
   .visit-planets {
     padding: 15px;
+    
 
     h3 {
       margin-top: 11px;
+      @media @phone {
+        padding: 10px 30px 5px;
+      }
     }
 
     p {
       margin-top: 13px;
+      @media @phone {
+        padding: 0 30px;
+      }
     }
   }
 
   .walk {
     margin-top: 60px;
+    
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    @media @phone {
+      flex-flow: column nowrap;
+      align-items: center;
+      margin-top: 30px;
+      padding: 25px 30px;
+
+      
+    }
 
     .walk-text {
       width: 50%;
+      @media @phone {
+        width: 93%;
+      }
 
       h3 {
         margin-bottom: 10px;
+        @media @phone {
+          font-size: 2.6rem;
+        }
       }
 
       p {
@@ -63,14 +117,22 @@
         .para-btn(@porcelain, @btn-bg-color);
         width: 33%;
         font-size: 2rem;
+        @media @phone {
+          width: 90%;
+        }
 
       }
     }
 
     .walk-img {
       width: 46%;
+      @media @phone {
+        width: 93%;
+        margin: 10px 0;
+        order: -2;
+      }
       margin-left: 4%;
-      
+     
       img {
         width: 100%;
         height: auto;
