@@ -34,13 +34,26 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Adaptive websites accommodate different screen sizes usually by adapting elements so that they appear cleanly regardless of the display, however, the layout of the site stays the same. Responsive web design, in contrast, will actually change the layout/stylings based on the device viewing it. For example, an adaptive website will have one layout but breakpoints for adjustments throughout, whereas a responsive website may have an entirely different layout at desktop, tablet, and mobile resolutions. 
+
 2. Describe what it means to be mobile first vs desktop first.
+
+It’s as the name implies – you make a decision whether to design first for the desktop version or mobile version, and then work your way to the opposite. If you think your target demographic is more mobile based, then it would make sense to be mobile first, and vice versa for a desktop target demographic. 
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+It sets the baseline for the rem value to be 10 pixels. This way, you can easily get the font size you want (2.4rem = 24px).
+
+
 4. How would you describe preprocessing to someone new to CSS?
 
+It’s an alternative syntax to CSS with a few advantages. You can store variables and mix them into classes – and then insert those mix ins into another class – a helpful feature for maintaining dry code. It allows for much clearer nesting and media queries too.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+I really like the programmability of it. Using variables I was able to nail down a color pallet instead of having a notepad full of hex color values. Then I could take them and make mixins, and then use mixins in other mixins! Stuff like this is nice because if you take the time to set the variables, mixins, and parametric functions together in the beginning, the rest is much easier to code up. 
+Nesting is a little bit troublesome for me still. Sometimes, it seems that it doesn’t matter if it is nested or not because both end up with the CSS looking the same – whereas other times it DOES affect the page. At this point I am figuring it out via trial and error.
+
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
